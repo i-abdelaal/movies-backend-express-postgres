@@ -1,7 +1,6 @@
 import "reflect-metadata";
 import { createConnection } from "typeorm";
-
-const dbPort = process.env.TYPEORM_PORT || 5432;
+import { dbPort } from "../../config";
 
 const connect = () => {
   {
